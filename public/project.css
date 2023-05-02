@@ -48,18 +48,18 @@
   #active:checked ~ .menu-btn i:before{
     content: "\f00";
   }
-  .wrapper ul{
+  /* .wrapper ul{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     list-style: none;
     text-align: center;
-  }
-  .wrapper ul li{
+  } */
+  /* .wrapper ul li{
     margin: 15px 0;
-  }
-  .wrapper ul li a{
+  } */
+  .wrapper a{
     color: none;
     text-decoration: none;
     font-size: 30px;
@@ -72,7 +72,7 @@
     line-height: 50px;
     transition: all 0.3s ease;
   }
-  .wrapper ul li a:after{
+  .wrapper a:after{
     position: absolute;
     content: "";
     background: #fff;
@@ -86,10 +86,10 @@
     z-index: -1;
     
   }
-  .wrapper ul li a:hover:after{
+  .wrapper a:hover:after{
     transform: scaleY(1);
   }
-  .wrapper ul li a:hover{
+  .wrapper a:hover{
     color: #fff;
   }
   
