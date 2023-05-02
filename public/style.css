@@ -193,19 +193,24 @@ main{
 #right img{
   width: 90%;
   height: 90%;
-  border-radius: 10%;
   /* background-color: #1a9790; */
   filter: grayscale(100%);
 
-  
+
   
   
 
+
 }
+#right section{
+  display: flex;
+  justify-content: center;
+  border: 5px solid #1a9790;
+  
+}  
 #right img:hover{
   width: 90%;
   height: 90%;
-  border-radius: 10%;
   /* background-color: #1a9790; */
   filter: grayscale(0%);
 
