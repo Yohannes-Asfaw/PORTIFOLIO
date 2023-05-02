@@ -23,18 +23,20 @@ function hideprogress(){
     })
 }
 function showstory(){
-    storySection.style.filter='blur(0)';
     storySection.style.opacity=1;
+    storySection.style.transform="translateY(0px)";
+    storySection.style.transition="opacity 1s ease";
+    storySection.style.transform="1s ease";
     
     
     
     
 }
 function hidestory(){
-    storySection.style.filter='blur(5px)';
-
-    storySection.style.opacity=0;
-    
+    storySection.style.opacity=0.01;
+    storySection.style.transform="translateY(20px)";
+    storySection.style.transition="opacity 1s ease";
+    storySection.style.transform="1s ease";
     
     
 }

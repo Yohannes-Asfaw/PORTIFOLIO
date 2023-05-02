@@ -227,6 +227,7 @@ nav a{
   font-size: 1em;
   padding: 3px;
   color: #35b3b8;
+  transition:all 1s;
   
   
 }
