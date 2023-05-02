@@ -194,11 +194,25 @@ main{
   width: 90%;
   height: 90%;
   border-radius: 10%;
-  /* background-color: #35b3b8; */
+  /* background-color: #1a9790; */
+  filter: grayscale(100%);
+
   
   
   
- 
+
+}
+#right img:hover{
+  width: 90%;
+  height: 90%;
+  border-radius: 10%;
+  /* background-color: #1a9790; */
+  filter: grayscale(0%);
+
+  
+  
+  
+
 }
 
 nav a{
