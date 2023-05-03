@@ -87,10 +87,10 @@ window.addEventListener('scroll',()=>{
     }
 
     if (storypos<screenpos1){
-        showstory();
+        // showstory();
     }
     else{
-        hidestory();
+        // hidestory();
     }
     if (projectpos<screenpos1){
         showprojectes();
@@ -112,43 +112,3 @@ window.addEventListener('scroll',()=>{
 
 
 
-var aText = new Array(
-    "HI! MY NAME IS YOHANNES ASFAW" ,
-    " I AM A WEB DEVELOPER  MOBILE APP DEVELOPER .",
-    "IF YOU NEED ANY HELP I AM HERE FOR YOU."
-          
-
-    );
-    var iSpeed = 200; // time delay of print out
-    var iIndex = 0; // start printing array at this posision
-    var iArrLength = aText[0].length; // the length of the text array
-    var iScrollAt = 20; // start scrolling up at this many lines
-     
-    var iTextPos = 0; // initialise text position
-    var sContents = ''; // initialise contents variable
-    var iRow; // initialise current row
-     
-    function typewriter()
-    {
-     sContents =  ' ';
-     iRow = Math.max(0, iIndex-iScrollAt);
-     var destination = document.getElementById("typedtext");
-     
-     while ( iRow < iIndex ) {
-      sContents += aText[iRow++];
-     }
-     destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "|";
-     if ( iTextPos++ == iArrLength ) {
-      iTextPos = 0;
-      iIndex++;
-      if ( iIndex != aText.length ) {
-       iArrLength = aText[iIndex].length;
-       setTimeout("typewriter()", 500);
-      }
-     } else {
-      setTimeout("typewriter()", iSpeed);
-     }
-    }
-    
-    
-    typewriter();
