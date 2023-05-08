@@ -293,22 +293,48 @@ nav a:hover{
 
 #story #content #about{
   /* box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; */
-  padding: 2%;
+  padding: 0;
   color: #3d546e;
-  margin-bottom: 5%;
+  
   font-size: 1.25em;
+  width: 350px;
+  height: 350px;
+	background: #1abc9c;
+	
+	overflow: hidden;
   
 
 }
 #story #content #about img{
-  width: 90%;
-  height: 60%;
-  background-color: #869091;
+  width: 350px;
+  height: 350px;
+  
+  background-color: #918f86;
+  
+  box-shadow: rgba(86, 86, 88, 0.548) 0px 48px 100px 0px;
+  transform: scale(1);
+	transition: .3s ease-in-out;
+  opacity: .5;
+
+}
+#story #content #about:hover img{
+  
+  opacity: 0;
   
 
 }
 #story #content #about p{
-  margin: 7px;
+  text-align: center;
+  color: rgb(39, 37, 37);
+  
+  transition: .3s ease-in-out;
+  
+
+}
+#story #content #about:hover p{
+  color: rgb(255, 252, 252);
+  opacity: 1;
+  transform: translatey(-200px);
   
 
 }
@@ -696,7 +722,8 @@ progress{
   grid-template-rows: auto;
   padding: 2%;
   background-color: #edf5f5;
- 
+background-image: url(../src/images/pngegg\ \(3\).png); 
+background-size: cover;
 }
 
 
