@@ -266,7 +266,7 @@ nav a:hover{
 }
 #story #content{
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 50% 50%;
   grid-template-rows: auto;
   place-items: center;
 
@@ -300,9 +300,9 @@ nav a:hover{
   font-size: 1.25em;
   width: 350px;
   height: 350px;
-	background: #1abc9c;
+	background: transparent;
 	
-	overflow: hidden;
+	/* overflow: hidden; */
   
 
 }
@@ -310,17 +310,18 @@ nav a:hover{
   width: 350px;
   height: 350px;
   
-  background-color: #918f86;
   
-  box-shadow: rgba(86, 86, 88, 0.548) 0px 48px 100px 0px;
+  /* box-shadow: rgba(86, 86, 88, 0.548) 0px 48px 100px 0px; */
   transform: scale(1);
-	transition: .3s ease-in-out;
-  opacity: .5;
+	transition: .5s ease-in-out;
+  background-color: rgb(247, 152, 63);
+  
 
 }
 #story #content #about:hover img{
+  transform: translatey(-19px);
   
-  opacity: 0;
+  background: #28b894;
   
 
 }
@@ -329,16 +330,14 @@ nav a:hover{
   color: rgb(39, 37, 37);
   
   transition: .3s ease-in-out;
-  
-
-}
-#story #content #about:hover p{
-  color: rgb(255, 252, 252);
-  opacity: 1;
   transform: translatey(-200px);
+  opacity: 0;
+  color: rgb(255, 252, 252);
+
   
 
 }
+
 .title{
   font-size: 1.8em;
   color: #5cacac;
@@ -372,9 +371,17 @@ nav a:hover{
 
 #skills-intro{
   display: grid;
-  grid-template-rows:auto;
   grid-template-columns: 50% 50%;
-  place-items: center;
+  grid-template-rows: auto;
+}
+#skills-text{
+  
+  padding: 10%;
+  padding-top:0 ;
+}
+#skills-text p{
+  
+  margin: 0;
 }
 #skills-intro section span{
   
